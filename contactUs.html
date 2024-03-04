@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | DoBu Martial Arts</title>
+
+    <link rel="icon" type="image/x-icon" href="Assets/Untitled-1.png">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/cf59577066.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header></header>
+
+    <div class="outer-wrapper">
+        <main>
+
+            <div class="background">
+                <img src="Assets/risen-wang-20jX9b35r_M-unsplash.jpg" alt="background">
+            </div>
+            <div class="inner-wrapper" style="background-color: rgba(0, 0, 0, 0.608); margin-bottom: 0% ;">
+
+                <div class="container" style="padding-bottom: 5rem;">
+                    <div class="row text-center mt-5 p-5">
+                       <div class="col">
+                        <h2>
+                            Contact Us
+                        </h2>
+                       </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            
+                        <form id="contact-form" class="form-horizontal mb-2" role="form">
+
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name"
+                                        value="" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email"
+                                        value="" required>
+                                </div>
+                            </div>
+
+                            <textarea class="form-control" rows="5" placeholder="MESSAGE" name="message"
+                                required></textarea>
+
+                            <button class="btn btn-primary send-button form-group" id="submit" type="submit" value="SEND">
+                                <div class="alt-send-button">
+                                    <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                                </div>
+                            </button>
+                        </form>
+
+                        </div>
+                        <div class="col-sm-6 px-5">
+                            <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5191.714306843247!2d19.4778877935791!3d49.411607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715c895b99bd32d%3A0x926d9d6d32083b5a!2sDOBU%20s.r.o.!5e0!3m2!1sen!2smm!4v1698141646499!5m2!1sen!2smm"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("header").load("header.html");
+
+            $("footer").load("footer.html");
+
+            $(window).scroll(function () {
+                var scroll = $(this).scrollTop();
+                $(".background img").css({
+                    transform: 'translate3d(0, ' + -scroll / 3 + 'px, 0)'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
